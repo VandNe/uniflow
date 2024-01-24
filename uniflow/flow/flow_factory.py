@@ -1,13 +1,13 @@
 """Flow Factory Module."""
 from typing import Dict, List
 
-from uniflow.constants import EXTRACT, RATER, TRANSFORM
+from uniflow.constants import EXTRACT, RATER, TRANSFORM, EXPANDREDUCE
 
 
 class FlowFactory:
     """Flow Factory Class."""
 
-    _flows = {EXTRACT: {}, TRANSFORM: {}, RATER: {}}
+    _flows = {EXTRACT: {}, TRANSFORM: {}, RATER: {}, EXPANDREDUCE: {}}
 
     @classmethod
     def register(cls, name: str, flow_cls: "Flow") -> None:  # noqa: F821

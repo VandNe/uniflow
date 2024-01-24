@@ -122,7 +122,6 @@ class TransformOpenAIConfig(TransformConfig):
     flow_name: str = "TransformOpenAIFlow"
     model_config: ModelConfig = field(default_factory=OpenAIModelConfig)
 
-
 @dataclass
 class TransformHuggingFaceConfig(TransformConfig):
     """Transform Hugging Face Config Class."""
@@ -803,3 +802,11 @@ class PipelineConfig:
 
     extract_config: ExtractConfig = field(default_factory=ExtractConfig)
     transform_config: TransformConfig = field(default_factory=TransformConfig)
+
+###########################################################
+#                    ExpandReduce Config                      #
+###########################################################
+@dataclass
+class ExpandReduceConfig:
+    """ExpandReduce Base Config Class."""
+    flow_name: str = "ExpandReduceFlow" 

@@ -1,5 +1,3 @@
-"""Flow constants."""
-
 ROOT_NAME = "root"
 OUTPUT_NAME = "output"
 
@@ -7,3 +5,4 @@ OUTPUT_NAME = "output"
 EXTRACT = "extract"
 TRANSFORM = "transform"
 RATER = "rater"
+EXPANDREDUCE = "expandreduce"
